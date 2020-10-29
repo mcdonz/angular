@@ -1,2 +1,13 @@
 <app-navbar></app-navbar>
+<app-table 
+    [firstName]="firstName"
+    [lastName]="lastName"
+    [siblings]="siblings">
+</app-table>
+
+<div style="border: solid 1px black; padding:15px;">
+   
 <h1>Hi {{name}}</h1>
+<h2>Count: {{count}}</h2>
+<button class="btn btn-success" (click)="increment()">+</button>
+<button class="btn btn-warning" (click)="decrement()">-</button>
